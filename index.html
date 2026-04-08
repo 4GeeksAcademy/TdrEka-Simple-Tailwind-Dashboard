@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Influencer Social Analytics Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="min-h-screen bg-slate-950 text-slate-100 antialiased">
+    <header class="border-b border-violet-500/20 bg-slate-900/70 backdrop-blur">
+      <div class="mx-auto flex w-full max-w-screen-2xl flex-col gap-4 px-4 py-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+          <div>
+            <p class="text-xs uppercase tracking-[0.2em] text-violet-300">Eka Influence Studio</p>
+            <h1 class="mt-1 text-xl font-semibold text-white sm:text-2xl">Social Media Analytics Dashboard</h1>
+          </div>
+          <span class="inline-flex w-fit items-center rounded-full border border-violet-400/30 bg-violet-500/10 px-3 py-1 text-xs font-medium text-violet-200">
+            Last updated: Apr 8, 2026 10:45 UTC
+          </span>
+        </div>
+
+        <nav aria-label="Primary" class="overflow-x-auto">
+          <ul class="flex min-w-max items-center gap-2 text-sm">
+            <li>
+              <a href="#kpis" class="rounded-full bg-violet-500/20 px-3 py-1.5 font-medium text-violet-200 ring-1 ring-violet-400/30">KPI Cards</a>
+            </li>
+            <li>
+              <a href="#drivers" class="rounded-full px-3 py-1.5 text-slate-300 transition hover:bg-slate-800 hover:text-white">Drivers</a>
+            </li>
+            <li>
+              <a href="#operations" class="rounded-full px-3 py-1.5 text-slate-300 transition hover:bg-slate-800 hover:text-white">Operations</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mx-auto flex w-full max-w-screen-2xl flex-col gap-6 px-4 py-6 sm:px-6 md:gap-8 md:py-8 lg:px-8">
+      <section id="kpis" aria-labelledby="kpi-title" class="space-y-4">
+        <div class="flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <h2 id="kpi-title" class="text-lg font-semibold text-white sm:text-xl">KPI Cards</h2>
+          <span class="text-xs text-slate-400">Instagram, TikTok, YouTube</span>
+        </div>
+
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-6">
+          <article class="rounded-2xl border border-violet-400/20 bg-slate-900/80 p-4 shadow-md shadow-slate-950/40">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-violet-500/20 text-violet-200 ring-1 ring-violet-400/30">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-5 w-5" aria-hidden="true">
+                  <path d="M3 7h18" />
+                  <path d="M5 7v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7" />
+                  <path d="M12 11v6" />
+                  <path d="M10 13h4" />
+                </svg>
+              </span>
+              <span class="text-xs font-medium text-emerald-300">&uarr; 7.4%</span>
+            </div>
+            <p class="mt-4 text-sm text-slate-400">Total Commissions Earned</p>
+            <p class="mt-2 text-2xl font-semibold text-white">&euro;19,890</p>
+          </article>
+
+          <article class="rounded-2xl border border-violet-400/20 bg-slate-900/80 p-4 shadow-md shadow-slate-950/40">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-violet-500/20 text-violet-200 ring-1 ring-violet-400/30">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-5 w-5" aria-hidden="true">
+                  <path d="M6 3v18" />
+                  <path d="M18 3v18" />
+                  <path d="M3 9h18" />
+                  <path d="M3 15h18" />
+                </svg>
+              </span>
+              <span class="text-xs font-medium text-emerald-300">&uarr; 5.1%</span>
+            </div>
+            <p class="mt-4 text-sm text-slate-400">Total Sales</p>
+            <p class="mt-2 text-2xl font-semibold text-white">1,760 units</p>
+          </article>
+
+          <article class="rounded-2xl border border-violet-400/20 bg-slate-900/80 p-4 shadow-md shadow-slate-950/40">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-violet-500/20 text-violet-200 ring-1 ring-violet-400/30">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-5 w-5" aria-hidden="true">
+                  <circle cx="7" cy="7" r="2.5" />
+                  <circle cx="17" cy="17" r="2.5" />
+                  <path d="M6 18L18 6" />
+                </svg>
+              </span>
+              <span class="text-xs font-medium text-emerald-300">&uarr; 0.4%</span>
+            </div>
+            <p class="mt-4 text-sm text-slate-400">Average Conversion Rate</p>
+            <p class="mt-2 text-2xl font-semibold text-white">3.8%</p>
+          </article>
+
+          <article class="rounded-2xl border border-violet-400/20 bg-slate-900/80 p-4 shadow-md shadow-slate-950/40">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-violet-500/20 text-violet-200 ring-1 ring-violet-400/30">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-5 w-5" aria-hidden="true">
+                  <path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6z" />
+                  <circle cx="12" cy="12" r="2.5" />
+                </svg>
+              </span>
+              <span class="text-xs font-medium text-emerald-300">&uarr; 9.2%</span>
+            </div>
+            <p class="mt-4 text-sm text-slate-400">Total Reach</p>
+            <p class="mt-2 text-2xl font-semibold text-white">4.2M</p>
+          </article>
+
+          <article class="rounded-2xl border border-violet-400/20 bg-slate-900/80 p-4 shadow-md shadow-slate-950/40">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-violet-500/20 text-violet-200 ring-1 ring-violet-400/30">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-5 w-5" aria-hidden="true">
+                  <path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z" />
+                </svg>
+              </span>
+              <span class="text-xs font-medium text-emerald-300">&uarr; 1.1%</span>
+            </div>
+            <p class="mt-4 text-sm text-slate-400">Overall Engagement Rate</p>
+            <p class="mt-2 text-2xl font-semibold text-white">6.9%</p>
+          </article>
+
+          <article class="rounded-2xl border border-violet-400/20 bg-slate-900/80 p-4 shadow-md shadow-slate-950/40">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-violet-500/20 text-violet-200 ring-1 ring-violet-400/30">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-5 w-5" aria-hidden="true">
+                  <circle cx="9" cy="10" r="4" />
+                  <path d="M13 10h5" />
+                  <path d="M15 8l3 2-3 2" />
+                  <path d="M6 18h12" />
+                </svg>
+              </span>
+              <span class="text-xs font-medium text-rose-300">&darr; 3.6%</span>
+            </div>
+            <p class="mt-4 text-sm text-slate-400">Cost Per Conversion</p>
+            <p class="mt-2 text-2xl font-semibold text-white">&euro;6.70</p>
+          </article>
+        </div>
+      </section>
+
+      <div class="flex items-center gap-3 py-1" aria-hidden="true">
+        <div class="h-px flex-1 bg-slate-800"></div>
+        <span class="text-[10px] uppercase tracking-[0.18em] text-slate-500">Drivers</span>
+        <div class="h-px flex-1 bg-slate-800"></div>
+      </div>
+
+      <section id="drivers" aria-labelledby="drivers-title" class="space-y-4">
+        <div class="flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <h2 id="drivers-title" class="text-lg font-semibold text-white sm:text-xl">Driver Charts and Stats</h2>
+          <span class="text-xs text-slate-400">KPI outcome drivers</span>
+        </div>
+
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <article class="rounded-2xl border border-slate-800 bg-slate-900/80 p-4 shadow-md shadow-slate-950/40">
+            <h3 class="text-sm font-medium text-slate-200">Conversion Rate by Platform</h3>
+            <p class="mt-1 text-xs text-slate-400">Tailwind-only horizontal bars</p>
+            <div class="mt-4 space-y-3 rounded-xl border border-violet-400/20 bg-slate-950/60 p-3">
+              <div>
+                <div class="mb-1 flex items-center justify-between text-xs">
+                  <span class="text-slate-300">Instagram</span>
+                  <span class="text-violet-200">4.4%</span>
+                </div>
+                <div class="h-2.5 rounded-full bg-slate-800">
+                  <div class="h-2.5 w-[44%] rounded-full bg-violet-400"></div>
+                </div>
+              </div>
+              <div>
+                <div class="mb-1 flex items-center justify-between text-xs">
+                  <span class="text-slate-300">TikTok</span>
+                  <span class="text-fuchsia-200">3.9%</span>
+                </div>
+                <div class="h-2.5 rounded-full bg-slate-800">
+                  <div class="h-2.5 w-[39%] rounded-full bg-fuchsia-400"></div>
+                </div>
+              </div>
+              <div>
+                <div class="mb-1 flex items-center justify-between text-xs">
+                  <span class="text-slate-300">YouTube</span>
+                  <span class="text-indigo-200">3.1%</span>
+                </div>
+                <div class="h-2.5 rounded-full bg-slate-800">
+                  <div class="h-2.5 w-[31%] rounded-full bg-indigo-400"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="rounded-2xl border border-slate-800 bg-slate-900/80 p-4 shadow-md shadow-slate-950/40 md:col-span-2">
+            <h3 class="text-sm font-medium text-slate-200">Performance by Product</h3>
+            <p class="mt-1 text-xs text-slate-400">Products A (€50), B (€120), C (€80) at 15% commission</p>
+            <div class="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-3">
+              <div class="rounded-xl border border-violet-400/30 border-t-4 border-t-violet-400 bg-slate-800/60 p-3 shadow-sm shadow-slate-950/40 ring-1 ring-violet-500/20">
+                <span class="inline-flex rounded-full bg-violet-500/20 px-2.5 py-1 text-xs font-medium text-violet-200 ring-1 ring-violet-400/30">Product A</span>
+                <p class="mt-3 text-3xl font-bold text-white">€7,050</p>
+                <div class="mt-3 h-3 rounded-full bg-slate-700">
+                  <div class="h-3 w-[35%] rounded-full bg-violet-400"></div>
+                </div>
+                <p class="mt-2 text-[11px] text-slate-400">Commission share: 35%</p>
+                <div class="mt-3 flex items-center justify-between text-xs">
+                  <span class="inline-flex items-center gap-1 text-slate-300">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-3.5 w-3.5" aria-hidden="true">
+                      <path d="M3 12h18" />
+                      <path d="M7 8v8" />
+                      <path d="M12 8v8" />
+                      <path d="M17 8v8" />
+                    </svg>
+                    940 units
+                  </span>
+                  <span class="inline-flex items-center gap-1 text-slate-300">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-3.5 w-3.5" aria-hidden="true">
+                      <circle cx="12" cy="12" r="9" />
+                      <path d="M12 7v5l4 2" />
+                    </svg>
+                    4.4% CVR
+                  </span>
+                </div>
+              </div>
+              <div class="relative rounded-xl border border-fuchsia-300/40 border-t-4 border-t-fuchsia-400 bg-slate-800/70 p-3 shadow-sm shadow-slate-950/40 ring-1 ring-fuchsia-400/35">
+                <span class="absolute right-3 top-3 inline-flex rounded-full bg-amber-400/20 px-2 py-0.5 text-[11px] font-medium text-amber-200 ring-1 ring-amber-300/30">🏆 Top earner</span>
+                <span class="inline-flex rounded-full bg-fuchsia-500/20 px-2.5 py-1 text-xs font-medium text-fuchsia-200 ring-1 ring-fuchsia-400/30">Product B</span>
+                <p class="mt-3 text-3xl font-bold text-white">€9,000</p>
+                <div class="mt-3 h-3 rounded-full bg-slate-700">
+                  <div class="h-3 w-[45%] rounded-full bg-fuchsia-400"></div>
+                </div>
+                <p class="mt-2 text-[11px] text-slate-400">Commission share: 45%</p>
+                <div class="mt-3 flex items-center justify-between text-xs">
+                  <span class="inline-flex items-center gap-1 text-slate-200">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-3.5 w-3.5" aria-hidden="true">
+                      <path d="M3 12h18" />
+                      <path d="M7 8v8" />
+                      <path d="M12 8v8" />
+                      <path d="M17 8v8" />
+                    </svg>
+                    500 units
+                  </span>
+                  <span class="inline-flex items-center gap-1 text-slate-200">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-3.5 w-3.5" aria-hidden="true">
+                      <circle cx="12" cy="12" r="9" />
+                      <path d="M12 7v5l4 2" />
+                    </svg>
+                    3.9% CVR
+                  </span>
+                </div>
+              </div>
+              <div class="rounded-xl border border-indigo-400/30 border-t-4 border-t-indigo-400 bg-slate-800/60 p-3 shadow-sm shadow-slate-950/40 ring-1 ring-indigo-500/20">
+                <span class="inline-flex rounded-full bg-indigo-500/20 px-2.5 py-1 text-xs font-medium text-indigo-200 ring-1 ring-indigo-400/30">Product C</span>
+                <p class="mt-3 text-3xl font-bold text-white">€3,840</p>
+                <div class="mt-3 h-3 rounded-full bg-slate-700">
+                  <div class="h-3 w-[19%] rounded-full bg-indigo-400"></div>
+                </div>
+                <p class="mt-2 text-[11px] text-slate-400">Commission share: 19%</p>
+                <div class="mt-3 flex items-center justify-between text-xs">
+                  <span class="inline-flex items-center gap-1 text-slate-300">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-3.5 w-3.5" aria-hidden="true">
+                      <path d="M3 12h18" />
+                      <path d="M7 8v8" />
+                      <path d="M12 8v8" />
+                      <path d="M17 8v8" />
+                    </svg>
+                    320 units
+                  </span>
+                  <span class="inline-flex items-center gap-1 text-slate-300">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-3.5 w-3.5" aria-hidden="true">
+                      <circle cx="12" cy="12" r="9" />
+                      <path d="M12 7v5l4 2" />
+                    </svg>
+                    3.1% CVR
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="rounded-2xl border border-slate-800 bg-slate-900/80 p-4 shadow-md shadow-slate-950/40">
+            <h3 class="text-sm font-medium text-slate-200">Sales Funnel</h3>
+            <p class="mt-1 text-xs text-slate-400">Reach to purchase with stage-by-stage drop-off</p>
+            <div class="mt-4 space-y-2">
+              <div class="rounded-xl border border-violet-400/25 bg-violet-500/15 px-4 py-3">
+                <div class="flex items-center justify-between">
+                  <p class="text-sm font-medium text-violet-100">Reach</p>
+                  <p class="text-sm font-semibold text-white">4,200,000</p>
+                </div>
+              </div>
+              <div class="mx-auto w-11/12 rounded-xl border border-violet-400/25 bg-violet-500/20 px-4 py-3">
+                <div class="flex items-center justify-between">
+                  <p class="text-sm font-medium text-violet-100">Clicks</p>
+                  <p class="text-sm font-semibold text-white">210,000</p>
+                </div>
+                <p class="mt-1 text-xs text-rose-200">Drop-off from previous stage: 95.0%</p>
+              </div>
+              <div class="mx-auto w-9/12 rounded-xl border border-violet-400/25 bg-violet-500/25 px-4 py-3">
+                <div class="flex items-center justify-between">
+                  <p class="text-sm font-medium text-violet-100">Add to Cart</p>
+                  <p class="text-sm font-semibold text-white">42,000</p>
+                </div>
+                <p class="mt-1 text-xs text-rose-200">Drop-off from previous stage: 80.0%</p>
+              </div>
+              <div class="mx-auto w-7/12 rounded-xl border border-violet-300/30 bg-violet-400/30 px-4 py-3">
+                <div class="flex items-center justify-between">
+                  <p class="text-sm font-medium text-violet-50">Purchase</p>
+                  <p class="text-sm font-semibold text-white">1,760</p>
+                </div>
+                <p class="mt-1 text-xs text-rose-100">Drop-off from previous stage: 95.8%</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="rounded-2xl border border-slate-800 bg-slate-900/80 py-4 shadow-md shadow-slate-950/40">
+            <h3 class="px-4 text-sm font-medium text-slate-200">Engagement Breakdown by Platform</h3>
+            <div class="mt-4 overflow-x-auto">
+              <table class="min-w-[520px] rounded-xl border border-slate-800 text-left text-sm shadow-sm shadow-slate-950/40">
+                <thead class="border-b border-slate-700 text-xs uppercase tracking-wide text-slate-400">
+                  <tr>
+                    <th scope="col" class="px-3 py-2">Platform</th>
+                    <th scope="col" class="px-3 py-2">Likes</th>
+                    <th scope="col" class="px-3 py-2">Comments</th>
+                    <th scope="col" class="px-3 py-2">Shares</th>
+                    <th scope="col" class="px-3 py-2">Eng. Rate</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-slate-800 odd:bg-slate-900 even:bg-slate-900/40 hover:bg-violet-500/10 transition-colors">
+                    <td class="px-3 py-3 text-slate-200">Instagram</td>
+                    <td class="px-3 py-3 text-slate-300">92,400</td>
+                    <td class="px-3 py-3 text-slate-300">6,780</td>
+                    <td class="px-3 py-3 text-slate-300">12,950</td>
+                    <td class="px-3 py-3 text-violet-200">7.4%</td>
+                  </tr>
+                  <tr class="border-b border-slate-800 odd:bg-slate-900 even:bg-slate-900/40 hover:bg-violet-500/10 transition-colors">
+                    <td class="px-3 py-3 text-slate-200">TikTok</td>
+                    <td class="px-3 py-3 text-slate-300">101,800</td>
+                    <td class="px-3 py-3 text-slate-300">8,240</td>
+                    <td class="px-3 py-3 text-slate-300">14,320</td>
+                    <td class="px-3 py-3 text-violet-200">6.8%</td>
+                  </tr>
+                  <tr class="odd:bg-slate-900 even:bg-slate-900/40 hover:bg-violet-500/10 transition-colors">
+                    <td class="px-3 py-3 text-slate-200">YouTube</td>
+                    <td class="px-3 py-3 text-slate-300">73,600</td>
+                    <td class="px-3 py-3 text-slate-300">4,980</td>
+                    <td class="px-3 py-3 text-slate-300">9,410</td>
+                    <td class="px-3 py-3 text-violet-200">6.1%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <div class="flex items-center gap-3 py-1" aria-hidden="true">
+        <div class="h-px flex-1 bg-slate-800"></div>
+        <span class="text-[10px] uppercase tracking-[0.18em] text-slate-500">Operations</span>
+        <div class="h-px flex-1 bg-slate-800"></div>
+      </div>
+
+      <section id="operations" aria-labelledby="operations-title" class="space-y-4">
+        <div class="flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <h2 id="operations-title" class="text-lg font-semibold text-white sm:text-xl">Operations Tables and Alerts</h2>
+          <span class="text-xs text-slate-400">Execution details and monitoring</span>
+        </div>
+
+        <div class="space-y-4">
+          <article class="rounded-2xl border border-slate-800 bg-slate-900/80 py-4 shadow-md shadow-slate-950/40">
+            <h3 class="mb-4 px-4 text-sm font-medium text-slate-200">Products Table</h3>
+            <div class="overflow-x-auto">
+              <table class="min-w-[640px] rounded-xl border border-slate-800 text-left text-sm shadow-sm shadow-slate-950/40">
+                <thead class="border-b border-slate-700 text-xs uppercase tracking-wide text-slate-400">
+                  <tr>
+                    <th scope="col" class="px-3 py-2">Product</th>
+                    <th scope="col" class="px-3 py-2">Price</th>
+                    <th scope="col" class="px-3 py-2">Units Sold</th>
+                    <th scope="col" class="px-3 py-2">Commissions</th>
+                    <th scope="col" class="px-3 py-2">Conv. Rate</th>
+                    <th scope="col" class="px-3 py-2">ROI</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-slate-800 odd:bg-slate-900 even:bg-slate-900/40 hover:bg-violet-500/10 transition-colors">
+                    <td class="px-3 py-3 text-slate-200">Product A</td>
+                    <td class="px-3 py-3 text-slate-300">€50</td>
+                    <td class="px-3 py-3 text-slate-300">940</td>
+                    <td class="px-3 py-3 text-slate-300">€7,050</td>
+                    <td class="px-3 py-3 text-violet-200">4.4%</td>
+                    <td class="px-3 py-3 text-emerald-300">2.8x</td>
+                  </tr>
+                  <tr class="border-b border-slate-800 odd:bg-slate-900 even:bg-slate-900/40 hover:bg-violet-500/10 transition-colors">
+                    <td class="px-3 py-3 text-slate-200">Product B</td>
+                    <td class="px-3 py-3 text-slate-300">€120</td>
+                    <td class="px-3 py-3 text-slate-300">500</td>
+                    <td class="px-3 py-3 text-slate-300">€9,000</td>
+                    <td class="px-3 py-3 text-violet-200">3.9%</td>
+                    <td class="px-3 py-3 text-emerald-300">3.5x</td>
+                  </tr>
+                  <tr class="odd:bg-slate-900 even:bg-slate-900/40 hover:bg-violet-500/10 transition-colors">
+                    <td class="px-3 py-3 text-slate-200">Product C</td>
+                    <td class="px-3 py-3 text-slate-300">€80</td>
+                    <td class="px-3 py-3 text-slate-300">320</td>
+                    <td class="px-3 py-3 text-slate-300">€3,840</td>
+                    <td class="px-3 py-3 text-violet-200">3.1%</td>
+                    <td class="px-3 py-3 text-emerald-300">2.1x</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="rounded-2xl border border-slate-800 bg-slate-900/80 py-4 shadow-md shadow-slate-950/40">
+            <h3 class="mb-4 px-4 text-sm font-medium text-slate-200">Platforms Table</h3>
+            <div class="overflow-x-auto">
+              <table class="min-w-[700px] rounded-xl border border-slate-800 text-left text-sm shadow-sm shadow-slate-950/40">
+                <thead class="border-b border-slate-700 text-xs uppercase tracking-wide text-slate-400">
+                  <tr>
+                    <th scope="col" class="px-3 py-2">Platform</th>
+                    <th scope="col" class="px-3 py-2">Reach</th>
+                    <th scope="col" class="px-3 py-2">Eng. Rate</th>
+                    <th scope="col" class="px-3 py-2">Conversions</th>
+                    <th scope="col" class="px-3 py-2">Revenue</th>
+                    <th scope="col" class="px-3 py-2">Best Metric</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-slate-800 odd:bg-slate-900 even:bg-slate-900/40 hover:bg-violet-500/10 transition-colors">
+                    <td class="px-3 py-3 text-slate-200">Instagram</td>
+                    <td class="px-3 py-3 text-slate-300">1,900,000</td>
+                    <td class="px-3 py-3 text-violet-200">7.4%</td>
+                    <td class="px-3 py-3 text-slate-300">870</td>
+                    <td class="px-3 py-3 text-slate-300">€51,200</td>
+                    <td class="px-3 py-3 text-emerald-300">Highest engagement</td>
+                  </tr>
+                  <tr class="border-b border-slate-800 odd:bg-slate-900 even:bg-slate-900/40 hover:bg-violet-500/10 transition-colors">
+                    <td class="px-3 py-3 text-slate-200">TikTok</td>
+                    <td class="px-3 py-3 text-slate-300">1,500,000</td>
+                    <td class="px-3 py-3 text-violet-200">6.8%</td>
+                    <td class="px-3 py-3 text-slate-300">590</td>
+                    <td class="px-3 py-3 text-slate-300">€36,800</td>
+                    <td class="px-3 py-3 text-amber-300">Most shares</td>
+                  </tr>
+                  <tr class="odd:bg-slate-900 even:bg-slate-900/40 hover:bg-violet-500/10 transition-colors">
+                    <td class="px-3 py-3 text-slate-200">YouTube</td>
+                    <td class="px-3 py-3 text-slate-300">800,000</td>
+                    <td class="px-3 py-3 text-violet-200">6.1%</td>
+                    <td class="px-3 py-3 text-slate-300">300</td>
+                    <td class="px-3 py-3 text-slate-300">€20,600</td>
+                    <td class="px-3 py-3 text-sky-300">Longest watch time</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="rounded-2xl border border-slate-800 bg-slate-900/80 py-4 shadow-md shadow-slate-950/40">
+            <h3 class="mb-4 px-4 text-sm font-medium text-slate-200">Campaigns Table</h3>
+            <div class="overflow-x-auto">
+              <table class="min-w-[760px] rounded-xl border border-slate-800 text-left text-sm shadow-sm shadow-slate-950/40">
+                <thead class="border-b border-slate-700 text-xs uppercase tracking-wide text-slate-400">
+                  <tr>
+                    <th scope="col" class="px-3 py-2">Campaign</th>
+                    <th scope="col" class="px-3 py-2">Dates</th>
+                    <th scope="col" class="px-3 py-2">Product</th>
+                    <th scope="col" class="px-3 py-2">Platform</th>
+                    <th scope="col" class="px-3 py-2">Result</th>
+                    <th scope="col" class="px-3 py-2">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-slate-800 odd:bg-slate-900 even:bg-slate-900/40 hover:bg-violet-500/10 transition-colors">
+                    <td class="px-3 py-3 text-slate-200">Spring Glow Push</td>
+                    <td class="px-3 py-3 text-slate-300">Apr 1 - Apr 7</td>
+                    <td class="px-3 py-3 text-slate-300">Product B</td>
+                    <td class="px-3 py-3 text-slate-300">Instagram</td>
+                    <td class="px-3 py-3 text-emerald-300">+65% conversions</td>
+                    <td class="px-3 py-3"><span class="rounded-full bg-emerald-500/20 px-2 py-1 text-xs font-medium text-emerald-200 ring-1 ring-emerald-400/30">Completed</span></td>
+                  </tr>
+                  <tr class="border-b border-slate-800 odd:bg-slate-900 even:bg-slate-900/40 hover:bg-violet-500/10 transition-colors">
+                    <td class="px-3 py-3 text-slate-200">Flash Deal Pulse</td>
+                    <td class="px-3 py-3 text-slate-300">Apr 3 - Apr 9</td>
+                    <td class="px-3 py-3 text-slate-300">Product A</td>
+                    <td class="px-3 py-3 text-slate-300">TikTok</td>
+                    <td class="px-3 py-3 text-rose-300">-40% conversions</td>
+                    <td class="px-3 py-3"><span class="rounded-full bg-rose-500/20 px-2 py-1 text-xs font-medium text-rose-200 ring-1 ring-rose-400/30">At Risk</span></td>
+                  </tr>
+                  <tr class="odd:bg-slate-900 even:bg-slate-900/40 hover:bg-violet-500/10 transition-colors">
+                    <td class="px-3 py-3 text-slate-200">Creator Tips Series</td>
+                    <td class="px-3 py-3 text-slate-300">Apr 5 - Apr 12</td>
+                    <td class="px-3 py-3 text-slate-300">Product C</td>
+                    <td class="px-3 py-3 text-slate-300">YouTube</td>
+                    <td class="px-3 py-3 text-amber-300">CTR below benchmark</td>
+                    <td class="px-3 py-3"><span class="rounded-full bg-amber-500/20 px-2 py-1 text-xs font-medium text-amber-200 ring-1 ring-amber-400/30">Needs Review</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="rounded-2xl border border-slate-800 bg-slate-900/80 p-4 shadow-md shadow-slate-950/40">
+            <h3 class="mb-4 text-sm font-medium text-slate-200">Alerts</h3>
+            <div class="space-y-3">
+              <div class="rounded-xl border border-slate-800 border-l-4 border-l-rose-500 bg-slate-950/70 p-3 shadow-sm shadow-slate-950/40">
+                <p class="text-sm font-semibold text-rose-200">🔴 Warning: Sharp drop in TikTok conversion this week (-40%)</p>
+                <p class="mt-1 text-xs text-slate-400">Potential cause: lower watch-through on short-form hooks.</p>
+              </div>
+              <div class="rounded-xl border border-slate-800 border-l-4 border-l-emerald-500 bg-slate-950/70 p-3 shadow-sm shadow-slate-950/40">
+                <p class="text-sm font-semibold text-emerald-200">🟢 Success: Instagram Product B spike (+65% conversions)</p>
+                <p class="mt-1 text-xs text-slate-400">Strong uplift after creator story sequence and pinned comments.</p>
+              </div>
+              <div class="rounded-xl border border-slate-800 border-l-4 border-l-amber-500 bg-slate-950/70 p-3 shadow-sm shadow-slate-950/40">
+                <p class="text-sm font-semibold text-amber-200">🟡 Info: YouTube CTR below benchmark — review content</p>
+                <p class="mt-1 text-xs text-slate-400">Test new thumbnails and stronger first-10-second callouts.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-800 bg-slate-900/70">
+      <div class="mx-auto w-full max-w-screen-2xl px-4 py-4 text-center text-xs text-slate-400 sm:px-6 lg:px-8">
+        Sample data for demonstration purposes.
+      </div>
+    </footer>
+  </body>
+</html>
